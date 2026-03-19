@@ -22,6 +22,10 @@
     --input: 204 25% 82%;
     --ring: 39 92% 60%;
     --radius: 1.5rem;
+    --font-body:
+      "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    --font-display:
+      "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
   }
 
   * {
