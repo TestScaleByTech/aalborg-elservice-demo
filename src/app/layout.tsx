@@ -1,17 +1,6 @@
 import type { Metadata } from "next";
-import { Fraunces, Space_Grotesk } from "next/font/google";
 
 import "./globals.css";
-
-const bodyFont = Space_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-body"
-});
-
-const displayFont = Fraunces({
-  subsets: ["latin"],
-  variable: "--font-display"
-});
 
 export const metadata: Metadata = {
   title: "Aalborg El-service ApS",
@@ -26,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="da">
-      <body className={`${bodyFont.variable} ${displayFont.variable} antialiased`}>
+      <body className="antialiased">
         {children}
       </body>
     </html>
