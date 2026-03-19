@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 34 30% 97%;
+    --foreground: 205 44% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 205 44% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 205 44% 12%;
+    --primary: 39 92% 60%;
+    --primary-foreground: 205 44% 12%;
+    --secondary: 200 28% 92%;
+    --secondary-foreground: 205 44% 12%;
+    --muted: 202 32% 94%;
+    --muted-foreground: 205 18% 38%;
+    --accent: 200 40% 86%;
+    --accent-foreground: 205 44% 12%;
+    --border: 204 25% 82%;
+    --input: 204 25% 82%;
+    --ring: 39 92% 60%;
+    --radius: 1.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body), sans-serif;
+    background-image:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(246, 243, 236, 0.98)),
+      radial-gradient(circle at top, rgba(247, 180, 62, 0.18), transparent 26%);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display), serif;
+    letter-spacing: -0.03em;
+  }
+
+  a {
+    @apply transition-colors;
+  }
+
+  ::selection {
+    background: rgba(247, 180, 62, 0.35);
+  }
+}
+
+@layer utilities {
+  .grid-shell {
+    background-image:
+      linear-gradient(rgba(17, 45, 63, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(17, 45, 63, 0.06) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+}
